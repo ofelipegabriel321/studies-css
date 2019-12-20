@@ -1,0 +1,15 @@
+As informações são transmitidas nas redes em forma binária (Sinal digital: ondas quadradas, de 0s e 1s).
+
+Os meios de transmissão suportam apenas Sinal Analógico.
+
+A partir do Modem, o sinal digital é transformado no sinal analógico (a partir da modulação), logo então é transmitido nessa forma analógica, quando
+chega ao receptor, as ondas analógicas são transformadas novamente em ondas digitais (a partir da demodulação) para que seja entendida pela máquina.
+
+Cada dispositivo tem um IP (computadores, celulares, servidores, etc). Para acessar um site a partir de uma URL, é preciso achar qual servidor pode
+prover acesso ao site, mas ele é identificado apenas por um IP (não a URL do site), para achar o servidor desse site a URL é analisada no DNS (Servidores
+de Nome de Domínio, servidores especiais que são responsáveis para encontrar servidores que estão no domínio da URL digitada. Numa URL com ".br", é
+buscado o DNS que armazena sites do Brasil. Nsse DNS há uma tabela com os sites e as identificações de IP, que vai servir para se identificar o IP da URL).
+
+
+
+

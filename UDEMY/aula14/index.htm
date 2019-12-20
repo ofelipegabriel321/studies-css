@@ -1,0 +1,50 @@
+<!-- Formularios: permitem que se interaja com o sistema: enviando informações de uma página para o sistema (para que sejam processados, armazenados, etc) -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="processa.php" method="post"> <!-- action: indica para que página o formulário será enviado    method: se for "get" a informação será enviada pela URL, se for "post", será enviada implicitamente-->
+        <label>Text</label>
+        <input type="text" name="texto1" placeholder="Text">
+        <br>
+
+        <label>Password</label>
+        <input type="password" name="senha">
+        <br>
+
+        <label>Oculto</label>
+        <input type="hidden" name="informacao_oculta" value="mensagem oculta">
+        <br>
+
+        <label>Select</label>
+        <select name="selecao">
+            <option value="1">Opcao 1</option>
+            <option value="2">Opcao 2</option>
+        </select>
+        <br>
+
+        <label>Radio</label>
+        <br>
+        <input type="radio" name="radio1" value="1"> Valor 1
+        <br>
+        <input type="radio" name="radio1" value="2"> Valor 2
+        <br>
+
+        <label>Checkbox</label>
+        <br>
+        <input type="checkbox" name="ck1" value="1" checked> Valor 1
+        <br>
+        <input type="checkbox" name="ck1" value="2"> Valor 2
+        <br>
+        <input type="checkbox" name="ck1" value="3"> Valor 3
+        <br>
+
+        <input type="submit" value="Enviar" name="submit">
+
+    </form>
+</body>
+
+</html>
