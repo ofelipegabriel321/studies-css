@@ -1,0 +1,67 @@
+.destaque {
+    margin-top: 10px;
+}
+
+.busca button {
+    /* adicionando imagem */
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    border: none;
+
+    /* tamanho da imagem */
+    width: 20px;
+    height: 20px;
+
+    /* imagem replacement */
+    text-indent: -9999px;
+}
+
+.busca,
+.menu-departamentos {
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-right: 10px;
+    width: 230px;
+    float: left; /* os dois são levados à esquerda e aceitam valores ao lado. O problema é que se apenas isso for aplicado, o busca vai ficar ao lado do menu, mas queremos que fique um embaixo do outro. Para isso, aplicaremos o clear: left no .menu-departamentos */
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+
+.menu-departamentos {
+    clear: left; /* assim, a parte esquerda do .menu-departamentos não vai aceitar nada à esquerda, nem que sejam elementos flutuantes*/
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+}
+
+.menu-departamentos ul ul li {
+    background-color: #DCDCDC;
+}
+
+.menu-departamentos li li a:before {
+    content: "- ";
+}
+
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
