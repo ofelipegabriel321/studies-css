@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(126, 31, 31);
+}
+
+.container {
+    margin: 0px 100px;
+    padding: 20px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornsilk
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+small {
+    font-size: smaller;
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    padding: 40px 0;
+    float: left;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: white;
+    background-color: peru;
+    background-image: url(../img/background-01.jpg);
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+p {
+    text-indent: 20px;
+    margin-bottom: 10px;
+}
+
+dl {
+    margin: 0px 0 10px 0;
+}
+
+dt {
+    font-style: italic;
+}
+
+dd {
+    margin-left: 40px;
+    color: gray;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+figcaption {
+    text-align: center;
+}
+
+#logo-total {
+    background-color: rgb(204, 97, 35);
+}
+
+#logo {
+    float: left;
+    padding: 10px 20px;
+}

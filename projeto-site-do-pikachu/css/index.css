@@ -1,0 +1,20 @@
+#pikachu-01 {
+    float: right;
+    padding: 10px 10px;
+    margin: 10px 0px 10px 20px;
+    border-color: orange;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.texto {
+    border-left-color: palevioletred;
+    border-left-style: dashed;
+    border-left-width: 3px;
+    padding: 0 30px;
+}
+
+.texto h2 {
+    position: relative;
+    right: 30px;
+}
