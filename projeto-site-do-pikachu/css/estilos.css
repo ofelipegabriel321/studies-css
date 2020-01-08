@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(126, 31, 31);
+    background-color: #7e4a1f;
+    background: linear-gradient(#7e1f1f, #af862c);
 }
 
 .container {
@@ -9,28 +10,47 @@ body {
     background-color: cornsilk
 }
 
-strong {
-    font-weight: bold;
+header {
+    position: relative;
+    background-color: #cc6123;
+    background: linear-gradient(#c96024, #d66422);
 }
 
-em {
-    font-style: italic;
+#menu-opcoes {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
-small {
-    font-size: smaller;
+#menu-opcoes ul {
+    margin-right: 40px;
+    margin-bottom: 20px;
 }
 
-b {
-    font-weight: bold;
+#menu-opcoes ul li {
+    display: inline-block;
+    background-color: #f6bd20;
+
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
 }
 
-i {
-    font-style: italic;
+#menu-opcoes ul li:hover {
+    box-shadow: 0 0 8px 5px rgba(255, 255, 200, 0.4);
 }
 
-u {
-    text-decoration: underline;
+li a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    padding: 9px;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 h1 {
@@ -80,11 +100,31 @@ figcaption {
     text-align: center;
 }
 
-#logo-total {
-    background-color: rgb(204, 97, 35);
-}
-
 #logo {
     float: left;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 30px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+small {
+    font-size: smaller;
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
 }
