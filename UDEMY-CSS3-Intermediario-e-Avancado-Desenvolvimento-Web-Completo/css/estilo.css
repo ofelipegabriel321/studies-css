@@ -1,0 +1,542 @@
+/***************************************************************************************
+>>> 1 - Seletores
+***************************************************************************************/
+
+/* Seletor Universal */
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
+/* Seletor de Texto*/
+/*
+h1 {
+    color: green;
+}
+*/
+
+/* Seletor de classe */
+/*
+.verde {
+    color: green;
+}
+
+p.verde {
+    color: green;
+}
+*/
+
+/* Seletor de ID */
+/*
+#cabecalho {
+    border: 1px solid blue;
+}
+*/
+
+/* Seletor de filho: filho, não neto, nem bisneto... */
+/*
+li>a {
+    color: red;
+    text-decoration: none;
+}
+*/
+
+/* Seletor de descendente*/
+/*
+div a {
+    color: green;
+}
+*/
+
+/* Seletor de irmão adjacente (no posterior) */
+/*
+h1+p {
+    color: red;
+}
+*/
+
+/* Seletor de irmão geral (qualquer que seja irmão posterior) */
+/*
+h1~p{
+    color: pink;
+}
+*/
+
+/***************************************************************************************
+>>> 2 - Herança e especificidade
+****************************************************************************************/
+/* Herança */
+/*
+body {
+    color: red;
+    border: 1px solid blue;
+}
+*/
+/* color é herdado pelos elementos descendentes; border não é herdado pelos elementos descendentes */
+
+/* Especificidade */
+/*
+p {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+*/ /* o seletor "p" blue que será aplicado pois ele é o último, mas se utilizar um !important no primeiro atributo, ele que irá atuar */
+
+/* Se um seleor for mais específico que outro, a regra mais espececífica será aplicada (terá precendência sobre regras mais gerais)*/
+/*
+* {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+*/
+/*OBS: aplicar num "h2.verde" quer dizer que eu aplico nos elementos que são h1 e são da classe "verde" já usando o "h2 .verde" (atenção para o espaço separando o h2 e o .verde) quer dizer que eu estou aplicando o estilo a todos os elementos da classe .verde descendentes de h2*/
+/*
+* {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+h2.verde {
+    color: green;
+}
+
+h2#amarelo {
+    color: yellow
+}
+
+h2.verde#amarelo {
+    color: orange;
+}
+*/
+
+
+/***************************************************************************************
+>>> 3 - Barra de navegação vertical
+****************************************************************************************/
+/* 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 20px;
+    background-image: url(../imagens/seta.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+*/
+
+/*
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover,
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+    background-color: #f99200;
+    background-position: right bottom;
+    color: #fff;
+}
+*/
+
+/***************************************************************************************
+>>> 4 - Barra de navegação horizontal
+****************************************************************************************/
+/*
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 720px;
+    background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    display: block;
+    padding: 0 3em;
+    line-height: 2.2em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../imagens/divisor.png) repeat-y;
+}
+
+ul .primeiro a {
+    background: none;
+}
+
+a:hover,
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+    color: #085662;
+    background: #44cade;
+}
+*/
+
+/***************************************************************************************
+>>> 5 - Barra de navegação com abas
+****************************************************************************************/
+/*
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+ul li {
+    border: 1px solid red;
+    float: left;
+    background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(../imagens/aba-esquerda.png) no-repeat top left;
+    color: #fff;
+}
+
+ul a:hover {
+    color: #894a1f;
+}
+
+ul #atual {
+    background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+    background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}*/
+
+/***************************************************************************************
+>>> 6 - Layouts
+****************************************************************************************/
+/*
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: f2f2f2;
+}
+
+#container {
+    width: 720px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#marca {
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo {
+    width: 520px;
+    float: right;
+}
+
+#conteudo-principal {
+    width: 320px;
+    float: left;
+}
+
+#conteudo-secundario {
+    width: 180px;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao {
+    width: 180px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+*/
+
+
+/***************************************************************************************
+>>> 7 - Layouts Líquidos
+****************************************************************************************/
+/*
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: f2f2f2;
+}
+
+#container {
+    width: 85%;
+    min-width: 720px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#marca {
+    width: 100%;
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo {
+    width: 75%;
+    float: right;
+}
+
+#conteudo-principal {
+    width: 63%;
+    float: left;
+}
+
+#conteudo-secundario {
+    width: 34%;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao {
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+*/
+
+/***************************************************************************************
+>>> 8 - Imagens Líquidas
+****************************************************************************************/
+/*
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: f2f2f2;
+}
+
+#container {
+    width: 85%;
+    min-width: 720px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#marca {
+    width: 100%;
+    height: 300px;
+    background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
+    text-align: center;
+    line-height: 300px;
+}
+*/
+/*
+#imagem {
+    width: 90%;
+    overflow: hidden;
+}
+*/
+/*
+#conteudo {
+    width: 75%;
+    float: right;
+}
+
+#conteudo-principal {
+    width: 63%;
+    float: left;
+}
+
+img.img-noticia {
+    width: 94%;
+    padding: 2%;
+    max-width: 600px;
+}
+
+#conteudo-secundario {
+    width: 34%;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao {
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+*/
+
+
+/***************************************************************************************
+>>> 9 - Estilizando tabelas
+****************************************************************************************/
+/*
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+    width: 600px;
+    border-collapse: separate;
+}
+
+th, td {
+    padding: 7px;
+}
+
+th {
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em;
+}
+
+tr:nth-child(2n) {
+    background-color: #efefef;
+}
+*/
+
+
+/***************************************************************************************
+>>> 10 - Formulários
+****************************************************************************************/
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
