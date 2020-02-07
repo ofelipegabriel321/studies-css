@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #ffffff url(../imagens/fundo.png) repeat-x;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos {
+    color: #ffffff;
+    background-color: rgb(211, 12, 12);
+    cursor: text;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer#rodape {
+    color: #ffffff;
+    width: 750px;
+    margin: 0 auto;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+#topo {
+    height: 150px;
+    background: url(../imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+    border: 1px solid red;
+}
+
+#topo ul {
+    background-color: brown;
+    margin-top: 25px;
+    float: left;
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #ffffff;
+    background: url(../imagens/divisor.png) left center no-repeat;
+}
+
+#topo ul a:hover {
+    color: #000000;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(../imagens/logo.png) no-repeat center;
+}
+
+#conteudo {
+    margin-top: 60px;
+}
+
+#primario {
+    width: 270px;
+    margin: 0 0 20px 195px;
+    background-color: blue;
+    float: left;
+}
+
+#secundario {
+    width: 270px;
+    margin: 0 0 20px 15px;
+    background-color: green;
+    float: left;
+}
+
+#lateral {
+    width: 180px;
+    margin: 0 0 20px -750px;
+    background-color: yellow;
+    float: left;
+}
+
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+    clear: both;
+}
